@@ -12,7 +12,7 @@ try:
         def update_current_observation(self, **kwargs: Any) -> None:
             if "usage_details" in kwargs:
                 kwargs["usage"] = kwargs.pop("usage_details")
-            get_client().update_current_span(**kwargs)
+            get_client().update_current_generation(**kwargs)
 
     langfuse_context = _LangfuseV3Context()
 except Exception:  # pragma: no cover
