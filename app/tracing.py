@@ -10,6 +10,8 @@ try:
             get_client().update_current_trace(**kwargs)
 
         def update_current_observation(self, **kwargs: Any) -> None:
+            if "usage_details" in kwargs:
+                kwargs["usage"] = kwargs.pop("usage_details")
             get_client().update_current_span(**kwargs)
 
     langfuse_context = _LangfuseV3Context()
