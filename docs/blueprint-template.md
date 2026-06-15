@@ -3,10 +3,10 @@
 > **Instruction**: Fill in all sections below. This report is designed to be parsed by an automated grading assistant. Ensure all tags (e.g., `[GROUP_NAME]`) are preserved.
 
 ## 1. Team Metadata
-- [GROUP_NAME]: 
-- [REPO_URL]: 
+- [GROUP_NAME]: Nhóm của Nguyễn Trung Kiên
+- [REPO_URL]: https://github.com/sonic-kine06/Lab13-Observability
 - [MEMBERS]:
-  - Member A: [Name] | Role: Logging & PII
+  - Member A: Nguyễn Trung Kiên (MSV: 2A202600969) | Role: All Lab Tasks
   - Member B: [Name] | Role: Tracing & Enrichment
   - Member C: [Name] | Role: SLO & Alerts
   - Member D: [Name] | Role: Load Test & Dashboard
