@@ -24,23 +24,23 @@
 ## 3. Technical Evidence (Group)
 
 ### 3.1 Logging & Tracing
-- [EVIDENCE_CORRELATION_ID_SCREENSHOT]: [Path to image]
-- [EVIDENCE_PII_REDACTION_SCREENSHOT]: [Path to image]
-- [EVIDENCE_TRACE_WATERFALL_SCREENSHOT]: [Path to image]
-- [TRACE_WATERFALL_EXPLANATION]: (Briefly explain one interesting span in your trace)
+- [EVIDENCE_CORRELATION_ID_SCREENSHOT]: docs/evidence/04_correlation_id_log.png
+- [EVIDENCE_PII_REDACTION_SCREENSHOT]: docs/evidence/05_pii_redaction_log.png
+- [EVIDENCE_TRACE_WATERFALL_SCREENSHOT]: docs/evidence/02_trace_waterfall.png
+- [TRACE_WATERFALL_EXPLANATION]: Trong ảnh trace waterfall, có thể thấy luồng thực thi đi từ hàm `run`, sau đó gọi hàm `retrieve` để lấy tài liệu (tốn một khoảng thời gian), và cuối cùng là hàm `generate` gọi LLM. Các span được gắn liền với nhau nhờ chung một trace_id, giúp dễ dàng debug khi một khâu bị chậm.
 
 ### 3.2 Dashboard & SLOs
-- [DASHBOARD_6_PANELS_SCREENSHOT]: [Path to image]
+- [DASHBOARD_6_PANELS_SCREENSHOT]: docs/evidence/06_dashboard.png
 - [SLO_TABLE]:
 | SLI | Target | Window | Current Value |
 |---|---:|---|---:|
-| Latency P95 | < 3000ms | 28d | |
-| Error Rate | < 2% | 28d | |
-| Cost Budget | < $2.5/day | 1d | |
+| Latency P95 | < 3000ms | 28d | < 1000ms |
+| Error Rate | < 2% | 28d | 0% |
+| Cost Budget | < $2.5/day | 1d | < $0.1 |
 
 ### 3.3 Alerts & Runbook
-- [ALERT_RULES_SCREENSHOT]: [Path to image]
-- [SAMPLE_RUNBOOK_LINK]: [docs/alerts.md#L...]
+- [ALERT_RULES_SCREENSHOT]: docs/evidence/07_alert_rules.png
+- [SAMPLE_RUNBOOK_LINK]: docs/alerts.md#1-high-latency-p95
 
 ---
 
